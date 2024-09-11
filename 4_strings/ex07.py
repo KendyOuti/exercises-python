@@ -22,7 +22,8 @@ while True:
         cont_caracteres += len(texto_linha) - texto_linha.count(" ")
 
 for linha in paragrafo:
-    print(linha)
+    for palavra in linha:
+        print(palavra)
 
 print(f"Número de caracteres = {cont_caracteres}")
 print(f"Número de espaços em branco = {cont_branco}")
